@@ -1,3 +1,4 @@
+
 <!-- PROJECT LOGO -->
 <br />
 
@@ -22,8 +23,9 @@
 * [Parts List](#PartsList)
 * [CAD Files](#CADFiles)
 * [Software Pipeline](#SoftwarePipeline)
+*  [Code Files](#CodeFiles)
 * [Setup and Run](#SetupandRun)
-* [Contanct](#Contact)
+* [Contact](#Contact)
 
 
 
@@ -32,10 +34,6 @@
 <!-- ABOUT THE PROJECT -->
 
 
-
-  <a href="#">
-    <img src="https://cdn.discordapp.com/attachments/769754881414004741/769755050637262848/agroLogo.png" alt="Logo" width="80" height="80">
-  </a>
 
 
 ## Overview
@@ -48,8 +46,6 @@ In typical labs, Plate Readers are very helpful in quantifying green fluorescenc
 
 ### Parts List
 
-
-#screenshots
 
 <ul>
   <li> Frosted Acrylic Plate </li>
@@ -72,9 +68,9 @@ Users are able to retain the CAD files by accesing the <a href="https://github.c
 
 Folders
 <ul>
-  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/tree/main/Stl_Files/Camera%20Case'>__Camera Case__</a>: contains all of the files for the camera case </li>
-  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/tree/main/Stl_Files/PlateReaderDesign'>__Plate Reader Design__</a>: contains all of the files for Plate-Q</li>
-  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/tree/main/Stl_Files/Well%20Plate%20Cover'>__Well Plate Cover__</a>:</a>Contains all of the files for the well plate cover</li>
+  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/tree/main/Stl_Files/Camera%20Case'>Camera Case</a>: contains all of the files for the camera case </li>
+  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/tree/main/Stl_Files/PlateReaderDesign'>Plate Reader Design</a>: contains all of the files for Plate-Q</li>
+  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/tree/main/Stl_Files/Well%20Plate%20Cover'>Well Plate Cover</a>:</a>Contains all of the files for the well plate cover</li>
 </ul>
 
 ## Software Pipeline
@@ -84,79 +80,44 @@ Plate-Q relies on a standardized Raspberry Pi HQ camera for the quantification o
 
 Learn More Here: <a href="https://2021.igem.org/Team:Lambert_GA/Measurement#softwareprocessing">Plate-Q Software Processing (iGEM.org)</a>
 
+## Code Files
+Users are able to retain the code files  in the github repository.
 
+Folders
+<ul>
+  <li><a href='[Lambert_GA/Demonstration_Notebook at main · igemsoftware2021/Lambert_GA (github.com)](https://github.com/igemsoftware2021/Lambert_GA/tree/main/Demonstration_Notebook)'>Demonstration Notebook</a>: contains Jupyter Notebook With Visual </li>
+  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/blob/main/Main/takePicture.py'>takePicture.py</a>: Python Script to take picture of sample with proper camera settings </li>
+  <li><a href='https://github.com/igemsoftware2021/Lambert_GA/blob/main/Main/Main.py'>Main.py</a>:</a> Main Python File To Calculate Fluorescence or Optical Density</li>
+</ul>
 
 <!-- CONTACT -->
 
 
 ## Setup and Run
 
-Agro-Q uses React Native . First, install the React Native CLI using the instructions at https://reactnative.dev/docs/environment-setup. 
-Select the “React Native CLI Quickstart” option and your desired platforms and complete the installation with the instructions provided.
+Plate-Q is run on a Rasperry Pi System. The following steps explain how to download the repository and run the python scripts
 
+### Linux
 
-Download the project files to your computer
-
-### Mac - Android or iOS
-1. Open Terminal and navigate to the project folder
-1. To run the app on the iOS Simulator, Xcode must be installed with a valid signing profile. Enter the following command in the terminal: 
+1. Open Terminal and navigate to folder of intrest
+2. Run the Following Command in terminal to download Main Files: 
 ```
-npx react-native run-ios
+wget https://github.com/igemsoftware2021/Lambert_GA/blob/main/Main/Main.py
+wget https://github.com/igemsoftware2021/Lambert_GA/blob/main/Main/takePicture.py
 ```
-
-Run the app on the iOS Simulator by opening the .xcworkspace file and clicking the play button at the top of the screen. To run on a physical iOS device, plug the device into the Mac and choose the device from the dropdown menu at the top of the screen.
-
-
-To run on an Android simulator, simply use the following command or open Android Studio and run the app manually.
+3. Now making sure you are in the proper folder run the __takingpitcure.py__ file by running  following command in terminal:
 ```
-npx react-native run-android
+python takePicture.py
 ```
-
-### Windows - Android
-1. To run the app on the Android simulator, open a command prompt window and navigate to the project folder
-2. Run the following command: 
+4. Now Taking the output from the python file above run the following command to run the __Main.py__ file:
 ```
-npx react-native run-android
+python Main.py
 ```
-To run on a physical Android device, plug in the device into the computer and use Android Studio to manually run the app onto the device.
-
-
-Note to user: 
-- app currently optimized for android
-- Data uploads to the app between 5sec -1min 
-- Sometimes data may not update properly so restart the app and run again
-
-Login info for test account: (create user will be created in future version)
-- Username : lamberttest@gamil.com
-- Password : lambert123
-
-
-## Testing
-Download the code from this repository to run a node js server to update values on the app:
-https://github.com/VarunSendilraj/testingagro-q/tree/main 
-
-### Run
-1. Open Terminal and navigate to the project folder
-1. To run the server, enter the following command in the terminal: 
-```
-npm install
-```
-To start the server run the following command in the terminal:
-```
-npm start
-```
-
-To update the data values type the values in the following link 
-```
-http://localhost:3000/sendData/temp,Ph,light,co2,waterTemp,humidity
-
-```
-
-
+5. Follow the propted steps by the command line and emjoy the flourecence/od output
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Contact
-Lambert Highschool
+Team: Lambert Highschool
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
