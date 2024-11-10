@@ -83,7 +83,7 @@ Folders
 
 Plate-Q relies on a standardized Raspberry Pi HQ camera for the quantification of fluorescence and optical density, which is done through a software pipeline (Figure 14-15) that extracts the image features and maps those values to laboratory-grade plate reader values. The pipeline starts by taking pictures in triplicates at 4 different positions across the well plate. Each image is then converted into a grayscale and applied a perspective transformation to analyze the perceived brightness. Then to isolate the wells in the image Otsu's Thresholding (see Image optimization) is used. Then a gamma correction is applied to the image to ecode it into a linear luminescence scale. Finally the brightness values of the triplicates are extracted and averaged to eliminate any outliers. Then the final value is stored in a data frame (CSV file) that is passed through a mathematical regression model to output laboratory-grade plate reader values.
 
-Learn More Here: <a href="https://2021.igem.org/Team:Lambert_GA/Measurement#softwareprocessing">Plate-Q Software Processing (iGEM.org)</a>
+Learn More Here: <a href="https://www.biorxiv.org/content/10.1101/2022.06.11.495768v1.full">Plate-Q Preprint</a>
 
 ## Code Files
 Users are able to retain the code files  in the github repository.
