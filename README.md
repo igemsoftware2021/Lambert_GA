@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img width="200" src="[https://user-images.githubusercontent.com/57602146/138389793-1da79ebd-bbf0-4e3d-b512-722a2212f9a3.png](https://varunsendilraj.github.io/plate-q.png)" alt="Material Bread logo">
+  <img width="200" src="https://user-images.githubusercontent.com/57602146/138389793-1da79ebd-bbf0-4e3d-b512-722a2212f9a3.png" alt="Material Bread logo">
 </p>
 
   <h3 align="center">Plate-Q</h3>
