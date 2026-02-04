@@ -1,9 +1,6 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <img width="200" src="https://varunsendilraj.github.io/plate-q.png" alt="Material Bread logo">
-</p>
 
   <h3 align="center">Plate-Q</h3>
 
